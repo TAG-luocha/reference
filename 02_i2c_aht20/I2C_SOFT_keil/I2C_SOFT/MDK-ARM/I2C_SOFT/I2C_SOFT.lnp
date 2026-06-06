@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"i2c_soft\startup_stm32f103xb.o"
+"i2c_soft\main.o"
+"i2c_soft\gpio.o"
+"i2c_soft\usart.o"
+"i2c_soft\stm32f1xx_it.o"
+"i2c_soft\stm32f1xx_hal_msp.o"
+"i2c_soft\stm32f1xx_hal_gpio_ex.o"
+"i2c_soft\stm32f1xx_hal_uart.o"
+"i2c_soft\stm32f1xx_hal.o"
+"i2c_soft\stm32f1xx_hal_rcc.o"
+"i2c_soft\stm32f1xx_hal_rcc_ex.o"
+"i2c_soft\stm32f1xx_hal_gpio.o"
+"i2c_soft\stm32f1xx_hal_dma.o"
+"i2c_soft\stm32f1xx_hal_cortex.o"
+"i2c_soft\stm32f1xx_hal_pwr.o"
+"i2c_soft\stm32f1xx_hal_flash.o"
+"i2c_soft\stm32f1xx_hal_flash_ex.o"
+"i2c_soft\stm32f1xx_hal_exti.o"
+"i2c_soft\system_stm32f1xx.o"
+"i2c_soft\aht20.o"
+"i2c_soft\i2c_soft.o"
+--strict --scatter "I2C_SOFT\I2C_SOFT.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "I2C_SOFT.map" -o I2C_SOFT\I2C_SOFT.axf

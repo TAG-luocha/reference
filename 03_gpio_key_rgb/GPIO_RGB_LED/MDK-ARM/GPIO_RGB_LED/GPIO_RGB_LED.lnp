@@ -1,0 +1,21 @@
+--cpu Cortex-M3
+"gpio_rgb_led\startup_stm32f103xb.o"
+"gpio_rgb_led\main.o"
+"gpio_rgb_led\stm32f1xx_it.o"
+"gpio_rgb_led\stm32f1xx_hal_msp.o"
+"gpio_rgb_led\stm32f1xx_hal_gpio_ex.o"
+"gpio_rgb_led\stm32f1xx_hal.o"
+"gpio_rgb_led\stm32f1xx_hal_rcc.o"
+"gpio_rgb_led\stm32f1xx_hal_rcc_ex.o"
+"gpio_rgb_led\stm32f1xx_hal_gpio.o"
+"gpio_rgb_led\stm32f1xx_hal_dma.o"
+"gpio_rgb_led\stm32f1xx_hal_cortex.o"
+"gpio_rgb_led\stm32f1xx_hal_pwr.o"
+"gpio_rgb_led\stm32f1xx_hal_flash.o"
+"gpio_rgb_led\stm32f1xx_hal_flash_ex.o"
+"gpio_rgb_led\stm32f1xx_hal_exti.o"
+"gpio_rgb_led\system_stm32f1xx.o"
+--strict --scatter "GPIO_RGB_LED\GPIO_RGB_LED.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "GPIO_RGB_LED.map" -o GPIO_RGB_LED\GPIO_RGB_LED.axf
